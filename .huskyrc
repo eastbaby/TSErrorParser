@@ -1,6 +1,6 @@
 {
     "hooks": {
-        "pre-commit": "cnpm run format && cnpm run lint && cnpm test",
+        "pre-commit": "npm run format && npm run lint && npm test",
         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
 }

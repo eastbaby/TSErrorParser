@@ -24,8 +24,8 @@
   "scripts": {
     "start": "tsc -w",
     "lint": "tslint -p tsconfig.json",
-    "test": "cnpm run lint && mocha -r ts-node/register test/*.ts",
-    "cov": "nyc cnpm run test",
+    "test": "npm run lint && mocha -r ts-node/register test/*.ts",
+    "cov": "nyc npm run test",
     "ci": "npm i && npm run lint && mocha -r ts-node/register test/*.ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "build": "tsc",
