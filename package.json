@@ -26,7 +26,7 @@
     "lint": "tslint -p tsconfig.json",
     "test": "cnpm run lint && mocha -r ts-node/register test/*.ts",
     "cov": "nyc cnpm run test",
-    "ci": "cnpm run lint && cnpm run cov",
+    "ci": "npm i && npm run lint && mocha -r ts-node/register test/*.ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "build": "tsc",
     "commit": "git-cz"
